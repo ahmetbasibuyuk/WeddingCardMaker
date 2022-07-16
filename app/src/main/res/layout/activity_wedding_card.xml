@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weddingbg"
+    tools:context=".WeddingCardActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="189dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <TextView
+            android:id="@+id/getWomanName"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wedding"
+            android:textAlignment="viewStart"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="57dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/wedding"
+            android:text="@string/u0040"
+
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="96sp"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/getManName"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wedding"
+            android:textAlignment="viewStart"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/getWeddingMessage"
+        android:layout_width="386dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="5sp"
+        android:text="Text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/getDateText"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getWeddingMessage"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/getVenueText"
+        android:layout_width="215dp"
+        android:layout_height="59dp"
+        android:fontFamily="sans-serif-light"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getDateText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
